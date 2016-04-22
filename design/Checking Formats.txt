@@ -1,0 +1,15 @@
+Here are the formats this code will check for:
+Phone Numbers:
+XXXXXXXXXX
++1XXXXXXXXX
+XXX-XXX-XXXX
+(XXX) XXX-XXXX
+
+Codes:
+XXXX
+(^Only^)
+
+Times:
+X:XX
+XX:XX
+(^TO BE IMPLEMENTED)
