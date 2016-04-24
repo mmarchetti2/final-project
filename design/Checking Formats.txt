@@ -12,4 +12,6 @@ XXXX
 Times:
 X:XX
 XX:XX
-(^TO BE IMPLEMENTED)
+(^Only^)
+
+Do you have any other suggestions to settings I could add?
