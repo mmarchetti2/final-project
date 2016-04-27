@@ -8,7 +8,7 @@ def phoneScanner(filename):
         text1 = open(filename + '.txt')
         textContent = text1.read()
         phoneChecker1 = re.compile(r'\d{3}-\d{3}-\d{4}')
-        phoneChecker2 = re.compile(r'((\W\d)?\d{10})')
+        phoneChecker2 = re.compile(r'((\W\d)?\d{10}[\n\s\W])')
         phoneChecker3 = re.compile(r'\(\d{3}\)\s\d{3}-\d{4}')
         mo1 = phoneChecker1.findall(textContent)
         mo2 = phoneChecker2.findall(textContent)
@@ -23,7 +23,7 @@ def phoneScanner(filename):
         text1 = open(fileName + '.pdf', 'rb') #Opens the PDF file
         textContent = PyPDF2.PdfFileReader(text1) #Uses the PDF Reader function
         phoneChecker1 = re.compile(r'\d{3}-\d{3}-\d{4}') #Regexes 1-3
-        phoneChecker2 = re.compile(r'((\W\d)?\d{10})')
+        phoneChecker2 = re.compile(r'((\W\d)?\d{10}[\n\s\W])')
         phoneChecker3 = re.compile(r'\(\d{3}\)\s\d{3}-\d{4}')
         pages = 0
         while pages < textContent.numPages: #Uses a loop that starts with page 0, and keeps going until every page is gotten.
