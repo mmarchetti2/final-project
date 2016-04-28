@@ -7,11 +7,8 @@ XXX-XXX-XXXX
 
 Codes:
 XXXX
-(^Only^)
+(Only)
 
 Times:
 X:XX
 XX:XX
-(^Only^)
-
-Do you have any other suggestions to settings I could add?

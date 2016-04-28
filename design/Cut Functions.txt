@@ -1,0 +1,16 @@
+This is a bit of an unnecessary document, but I thought I'd share it anyways.
+--==Cut Features==--
+<.docx checking>
+I had a lot of trouble installing python-docx, so much that I couldn't
+even get it in the end. So, that feature went out the window as I can't
+scan .docx without it.
+
+<A Fourth Setting>
+I was planning to have a fourth setting in addition to phone numbers,
+times, and four-digit codes. It may have been a certain string,
+like a first and last name.
+
+<Condensed Regexes>
+I originally only wanted to have one form for the phone checker, and it should have
+found all of them, but I couldn't get it to work.
+--==++==--

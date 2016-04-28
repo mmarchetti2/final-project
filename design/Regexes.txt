@@ -1,0 +1,31 @@
+<Regexes>:
+
+Phone Numbers:
+Form 1: \d{3}-\d{3}-\d{4}
+This first form checks for phone numbers that are like XXX-XXX-XXXX. 
+It first checks for 3 numerical digits, then a dash, 3 more digits, a dash, and then finally 4 digits.
+
+Form 2: (\W\d)?\d{10}[\n\s\W]
+This checks for forms XXXXXXXXXX and +XXXXXXXXXXX.
+This one is a bit more complicated. So the first part, (\W\d)?, checks if there's a +1 or 
+anything in front of it, and if there is, it prints it. Then, it checks for 10 digits,
+and the final part, [\n\s\W] is so that it doesn't print a string larger than 10 digits.
+The problem I had was that it kept printing +129385772083 as 12938577208 instead of
+2938577208. They're both technically 10 digits, but the custom character class was a way 
+to get around it. Also, the character class is used to check for periods, commas, newlines, and spaces.
+
+Form 3: \(\d{3}\)\s\d{3}-\d{4}
+This one simply checks for (XXX) XXX-XXXX.
+If first escapes the the ( character, checks for 3 digits, escapes the ) character, and then a space.
+Then, it checks for 3 digits, a dash, and 4 more digits.
+
+Times:
+(\d)?\d:\d{2}
+The first part, (\d)? checks if the time is in the form 10:00 or 1:00. The rest just checks for a digit,
+a colon, and then two more digits.
+
+Four-Digit Codes:
+\s\d{4}[\n\s\W]
+Although this sounds easy at first, you have to account for there being a longer string of digits than
+four. So, it checks for a space first, 4 digits, and then a character class used to check for commas, spaces,
+periods, and newlines.
